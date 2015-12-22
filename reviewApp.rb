@@ -1,10 +1,4 @@
-# メニューの表示
-puts "レビュー数：0"
-puts "[0]レビューを書く"
-puts "[1]レビューを読む"
-puts "[2]アプリを終了する"
-input = gets.to_i
-
+# メソッドの定義
 def post_preview
   post = {}
   puts "ジャンルを入力してください: "
@@ -23,23 +17,34 @@ def post_preview
 end
 
 def read_reviews
-
+  # レビューを読む
 end
 
 def end_program
-
+  exit
 end
 
 def exception
   puts "入力された値は無効な値です"
 end
 
-if input == 0 then
-  post_preview
-elsif input == 1 then
-  read_reviews
-elsif input == 2 then
-  end_program
-else
-  exception
+posts = []
+
+while true do
+  # メニューの表示
+  puts "レビュー数：0"
+  puts "[0]レビューを書く"
+  puts "[1]レビューを読む"
+  puts "[2]アプリを終了する"
+  input = gets.to_i
+
+  if input == 0 then
+    post_preview     # post_reviewメソッドの呼び出し
+  elsif input == 1 then
+    read_reviews     # read_reviewsメソッドの呼び出し
+  elsif input == 2 then
+    end_program      # end_programメソッドの呼び出し
+  else
+    exception        # exceptionメソッドの呼び出し
+  end
 end
