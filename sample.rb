@@ -1,2 +1,4 @@
-input = gets
-puts "入力した値は#{input}です"
+hash = {:title => "時をかける少女"}
+puts hash[:title]
+hash[:title] = "るろうに剣心"
+puts hash[:title]
