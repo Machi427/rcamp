@@ -1,4 +1,5 @@
-hash = {:title => "時をかける少女"}
-puts hash[:title]
-hash[:title] = "るろうに剣心"
-puts hash[:title]
+def say_hello
+  puts "Hello World"
+end
+
+say_hello
