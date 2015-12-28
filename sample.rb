@@ -1,5 +1,2 @@
-def say_hello
-  puts "hello!"
-end
-
-say_hello
+animals = ["いぬ", "ねこ", "ねずみ"]
+puts animals[0]
